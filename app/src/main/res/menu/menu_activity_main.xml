@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:yourapp="http://schemas.android.com/apk/res-auto">
+    <item
+        android:id="@+id/action_edit"
+        android:title="1"
+        android:icon="@drawable/ic_menu"
+        yourapp:showAsAction="always"
+        android:layout_alignParentLeft="true"
+        />
+
+    <item
+        android:id="@+id/action_search"
+        android:title="@android:string/search_go"
+        android:icon="@drawable/ic_cart"
+        yourapp:showAsAction="always"
+        android:layout_alignParentLeft="true"
+         />
+
+
+
+</menu>

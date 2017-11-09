@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Test1</string>
+    <string name="name">Главная</string>
+    <string name="item1">Item1</string>
+    <string name="item2">Item2</string>
+    <string name="item3">Item3</string>
+    <string name="item4">Item4</string>
+
+
+    <string name="a1">АКЦИИ</string>
+    <string name="a2">РЕКОМЕНДУЕМ ВАМ</string>
+    <string name="a3">РАСПРОДАЖА</string>
+    <string name="a4">ВСЕ</string>
+    <string name="a5">НОВИНКИ</string>
+    <string name="a6">ТОП ПРОДАЖ</string>
+    <string name="a7">ПОДАРОЧНЫЕ КАРТЫ</string>
+    <string name="a8">ГОТОВЫЕ КОМПЛЕКТЫ</string>
+    <string name="a9">ВЫ НЕДАВНО СМОТРЕЛИ</string>
+
+
+
+</resources>

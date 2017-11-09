@@ -1,0 +1,2674 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".MainActivity"
+    android:background="@color/light_grey">
+
+
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        >
+    <android.support.v7.widget.Toolbar
+        android:id="@+id/toolbarDebug"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:background="@color/white"
+
+        >
+
+
+        <LinearLayout android:id="@+id/ll"
+            xmlns:android="http://schemas.android.com/apk/res/android"
+            android:orientation="horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:gravity="center"
+           >
+
+            <Button
+                android:id="@+id/equalize_button"
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:layout_weight="0"
+                android:background="@drawable/ic_menu"
+
+
+                />
+
+
+            <TextView
+                android:elevation="2dp"
+                android:layout_weight="1"
+                android:id="@+id/ext"
+                android:text="@string/name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="20sp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="normal"
+                android:textColor="@color/black_87"
+                android:layout_marginLeft="32dp"
+                android:letterSpacing="0.01"
+                android:lineSpacingExtra="8sp"
+                />
+
+            <Button
+                android:layout_width="24dp"
+                android:layout_height="24dp"
+                android:id="@+id/e"
+                android:layout_weight="0"
+                android:background="@drawable/ic_cart"
+
+                android:layout_marginRight="16dp"
+                />
+
+
+
+
+        </LinearLayout>
+        <FrameLayout android:layout_width="match_parent"
+            android:layout_height="match_parent">
+        <View
+            android:layout_below="@id/ll"
+            android:layout_width="match_parent"
+            android:layout_height="5dp"
+            android:background="@drawable/toolbar_dropshadow"/>
+</FrameLayout>
+    </android.support.v7.widget.Toolbar>
+
+    <View
+
+        android:layout_width="match_parent"
+        android:layout_height="5dp"
+        android:background="@drawable/toolbar_dropshadow" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+
+        android:layout_marginTop="80dp"
+
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+           >
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+
+            android:layout_marginLeft="16dp"
+            android:layout_marginRight="16dp">
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@color/white"
+                android:orientation="horizontal"
+
+                >
+        <EditText
+            android:id="@+id/eq"
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:drawableRight="@drawable/ic_scan"
+
+            android:background="@drawable/roundcorner7"
+
+            android:hint="            Что вы ищете?"
+            android:textSize="16sp"
+            android:ems="19"
+
+            />
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:src="@drawable/a32"
+                android:layout_marginLeft="12dp"
+                />
+            </RelativeLayout>
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="48dp"
+            android:layout_marginTop="8dp"
+            android:gravity="center_horizontal"
+            android:orientation="vertical"
+            android:layout_marginLeft="12dp"
+
+            >
+
+            <TextView
+                android:id="@+id/price_text_view"
+
+
+
+                android:paddingTop="20dp"
+                android:fontFamily="sans-serif-medium"
+                android:textStyle="normal"
+                android:text="@string/a1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:textSize="14sp"
+
+                android:textColor="@color/black"
+
+
+                />
+        </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="136dp"
+
+                android:gravity="center_horizontal"
+                android:orientation="vertical"
+
+                >
+
+                <ImageView
+                    android:id="@+id/bitmap4"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                     />
+
+
+                }
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="8dp"
+                android:gravity="center_horizontal"
+                android:orientation="vertical" >
+
+
+                <ImageView
+                    android:id="@+id/b"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:layout_alignParentLeft="true"
+                    />
+
+
+
+
+
+            </LinearLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+
+
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:id="@+id/pr"
+
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:text="@string/a2"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/black"
+
+
+                    />
+
+                <Button
+                    android:layout_width="27dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/a4"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@color/str1"
+                    android:layout_marginRight="16dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:textSize="14sp"
+
+                    android:layout_marginTop="4dp"
+
+                    />
+            </RelativeLayout>
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+            <RelativeLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                android:background="@color/white"
+                android:orientation="horizontal"
+
+                >
+
+                <Button
+                    android:id="@+id/Fr"
+                    android:layout_width="184dp"
+                    android:layout_height="276dp"
+
+                    android:onClick="submitTableResult"
+                    android:background="@null"
+                    android:layout_alignBaseline="@+id/text1"
+                    android:layout_alignBottom="@+id/text1"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true" />
+                <ImageView
+                    android:id="@+id/image1"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                   android:layout_marginLeft="32dp"
+                    android:layout_marginTop="16dp"
+                    android:src="@drawable/bitmap_5"
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="150dp"
+                    android:layout_marginTop="14dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    >
+                <Button
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_centerHorizontal="true"
+                    android:src="@drawable/ic_like"
+                    android:background="@null"
+                    android:layout_alignParentLeft="true"
+                    />
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:src="@drawable/ic_like"
+                    />
+
+            </RelativeLayout>
+
+                <TextView
+                    android:id="@+id/text1"
+                    android:layout_below="@id/image1"
+                    android:text="Футболка с коротким рукавом для мальчиков BARKITO"
+                    android:layout_width="158dp"
+                    android:gravity=""
+                    android:layout_marginLeft="12dp"
+                    android:layout_height="60dp"
+                    android:layout_marginTop="4dp"
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:lineSpacingMultiplier="1.14"
+                    android:textColor="@color/black_two"
+                    />
+
+                <TextView
+                    android:id="@+id/text12"
+                    android:layout_below="@id/text1"
+                    android:text="259 ₽"
+                    android:layout_width="158dp"
+                    android:layout_marginLeft="12dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif-medium"
+                    android:textColor="@android:color/black"
+                    />
+
+
+                <Button
+                    android:layout_width="160dp"
+                    android:layout_height="36dp"
+                    android:text="В КОРЗИНУ"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="16dp"
+                    android:layout_below="@id/text12"
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/roundcorner"
+
+                    android:textSize="14sp"
+
+                    android:layout_marginTop="18dp"
+
+                    />
+                </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="24dp"
+                        android:orientation="horizontal"
+                        android:background="@color/white"
+                        >
+
+                        <Button
+                            android:id="@+id/F"
+                            android:layout_width="184dp"
+                            android:layout_height="276dp"
+                            android:layout_centerHorizontal="true"
+
+                            android:onClick="submitTableResult"
+                            android:background="@null"
+                            android:layout_alignParentLeft="true"
+                            />
+                        <ImageView
+                            android:id="@+id/image2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/bitmap_5"
+                            />
+                        <TextView
+                            android:id="@+id/text25"
+
+                            android:text="-10 %"
+                            android:layout_width="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="8dp"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/white"
+                            android:background="@drawable/roundcorner2"
+                            />
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="14dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            >
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_like"
+                                android:background="@null"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_like"
+                                />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/text2"
+                            android:layout_below="@id/image2"
+                            android:text="Футболка с коротким рукавом для мальчи..."
+                            android:layout_width="158dp"
+                            android:gravity=""
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:lineSpacingMultiplier="1.14"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black_two"
+                            />
+
+                        <TextView
+                            android:id="@+id/text22"
+                            android:layout_below="@id/text2"
+                            android:text="259 ₽"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/vermillion"
+                            />
+                        <TextView
+                            android:id="@+id/text23"
+                            android:layout_below="@id/text2"
+
+                            android:text="400 ₽"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="64dp"
+                            android:layout_height="18dp"
+                            android:layout_marginTop="11dp"
+                            android:textSize="12sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black__54"
+                            android:gravity=""
+                            />
+                        <TextView
+                            android:id="@+id/text24"
+                            android:layout_below="@id/text22"
+
+                            android:text="(выгода 141 ₽)"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="18dp"
+                            android:layout_marginTop="8dp"
+                            android:textSize="12sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black__54"
+                            android:gravity=""
+                            />
+
+                        <Button
+                            android:layout_width="160dp"
+                            android:layout_height="36dp"
+                            android:text="В КОРЗИНУ"
+                            android:fontFamily="sans-serif-medium"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:layout_marginRight="16dp"
+                            android:layout_below="@id/text24"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/roundcorner"
+
+                            android:textSize="14sp"
+
+                            android:layout_marginTop="12dp"
+
+                            />
+                    </RelativeLayout>
+</LinearLayout>
+</HorizontalScrollView>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="144dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+android:background="@color/white"
+
+                >
+                <LinearLayout
+                    android:id="@+id/l1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical" >
+                <TextView
+                    android:id="@+id/text3"
+
+                    android:text="Получайте персональные рекомендации по мере роста
+и развития Ваших малышей!"
+                    android:layout_width="198dp"
+                    android:gravity="center"
+
+                    android:layout_height="60dp"
+
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+
+                    android:letterSpacing="0.01"
+                    android:lineSpacingMultiplier="1.14"
+                    android:textColor="@color/black_two"
+
+                    />
+</LinearLayout>
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="36dp"
+                    android:layout_marginTop="16dp"
+                    android:gravity="center"
+                    android:orientation="horizontal"
+                    android:layout_below="@id/l1">
+                <Button
+                    android:id="@+id/b3"
+                    android:layout_width="120dp"
+                    android:layout_height="36dp"
+                    android:text="Мальчик"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="16dp"
+
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/roundcorner3"
+                    android:textAllCaps="false"
+                    android:textSize="14sp"
+                    android:onClick="submitOrder"
+
+
+                    />
+
+                <Button
+                    android:layout_width="120dp"
+                    android:layout_height="36dp"
+                    android:text="Девочка"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+                    android:textColor="@color/white"
+                    android:layout_marginRight="16dp"
+                    android:textAllCaps="false"
+
+                    android:layout_marginLeft="12dp"
+                    android:background="@drawable/roundcorner4"
+
+                    android:textSize="14sp"
+                    android:onClick="submitOrder"
+
+
+                    />
+</LinearLayout>
+
+
+                </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+
+                android:layout_marginTop="24dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+                    android:id="@+id/pr2"
+
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:text="@string/a3"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/black"
+
+
+                    />
+
+                <Button
+                    android:layout_width="27dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/a4"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@color/str1"
+                    android:layout_marginRight="16dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:onClick="submitOrder"
+                    android:layout_marginTop="4dp"
+
+                    />
+            </RelativeLayout>
+
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <Button
+                            android:id="@+id/F3"
+                            android:layout_width="184dp"
+                            android:layout_height="276dp"
+                            android:layout_centerHorizontal="true"
+
+                            android:onClick="submitTableResult"
+                            android:background="@null"
+                            android:layout_alignParentLeft="true"
+                            />
+                        <ImageView
+                            android:id="@+id/image4"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/bitmap_5"
+                            />
+                        <TextView
+                            android:id="@+id/text55"
+
+                            android:text="-10 %"
+                            android:layout_width="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="8dp"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/white"
+                            android:background="@drawable/roundcorner2"
+                            />
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="14dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            >
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_like"
+                                android:background="@null"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_like"
+                                />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/text42"
+                            android:layout_below="@id/image4"
+                            android:text="Футболка с коротким рукавом для мальчи..."
+                            android:layout_width="158dp"
+                            android:gravity=""
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:lineSpacingMultiplier="1.14"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black_two"
+                            />
+
+                        <TextView
+                            android:id="@+id/text422"
+                            android:layout_below="@id/text42"
+                            android:text="259 ₽"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/vermillion"
+                            />
+                        <TextView
+                            android:id="@+id/text423"
+                            android:layout_below="@id/text42"
+
+                            android:text="400 ₽"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="64dp"
+                            android:layout_height="18dp"
+                            android:layout_marginTop="11dp"
+                            android:textSize="12sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black__54"
+                            android:gravity=""
+                            />
+                        <TextView
+                            android:id="@+id/text424"
+                            android:layout_below="@id/text422"
+
+                            android:text="(выгода 141 ₽)"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="18dp"
+                            android:layout_marginTop="8dp"
+                            android:textSize="12sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black__54"
+                            android:gravity=""
+                            />
+
+                        <Button
+                            android:layout_width="160dp"
+                            android:layout_height="36dp"
+                            android:text="В КОРЗИНУ"
+                            android:fontFamily="sans-serif-medium"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:layout_marginRight="16dp"
+                            android:layout_below="@id/text424"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/roundcorner"
+
+                            android:textSize="14sp"
+                            android:onClick="submitOrder"
+                            android:layout_marginTop="12dp"
+
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="24dp"
+                        android:orientation="horizontal"
+                        android:background="@color/white"
+                        >
+
+                        <Button
+                            android:id="@+id/F4"
+                            android:layout_width="184dp"
+                            android:layout_height="276dp"
+                            android:layout_centerHorizontal="true"
+
+                            android:onClick="submitTableResult"
+                            android:background="@null"
+                            android:layout_alignParentLeft="true"
+                            />
+                        <ImageView
+                            android:id="@+id/image5"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/bitmap_5"
+                            />
+
+
+                        <ImageView
+                            android:id="@+id/image57"
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/ic_discount_card"
+
+                            />
+
+
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="14dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            >
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_like"
+                                android:background="@null"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_like"
+                                />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/text52"
+                            android:layout_below="@id/image5"
+                            android:text="Футболка с коротким рукавом для мальчи..."
+                            android:layout_width="158dp"
+                            android:gravity=""
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:lineSpacingMultiplier="1.14"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black_two"
+                            />
+
+                        <TextView
+                            android:id="@+id/text522"
+                            android:layout_below="@id/text52"
+                            android:text="259 ₽"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/vermillion"
+                            />
+                        <TextView
+                            android:id="@+id/text523"
+                            android:layout_below="@id/text52"
+
+                            android:text="без карты 300 ₽"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="64dp"
+                            android:layout_height="18dp"
+                            android:layout_marginTop="11dp"
+                            android:textSize="12sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black__54"
+                            android:gravity=""
+                            />
+                        <TextView
+                            android:id="@+id/text524"
+                            android:layout_below="@id/text522"
+
+                            android:text="(выгода 141 ₽)"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="18dp"
+                            android:layout_marginTop="8dp"
+                            android:textSize="12sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black__54"
+                            android:gravity=""
+                            />
+
+                        <Button
+                            android:layout_width="160dp"
+                            android:layout_height="36dp"
+                            android:text="В КОРЗИНУ"
+                            android:fontFamily="sans-serif-medium"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:layout_marginRight="16dp"
+                            android:layout_below="@id/text524"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/roundcorner"
+
+                            android:textSize="14sp"
+                            android:onClick="submitOrder"
+                            android:layout_marginTop="12dp"
+
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+
+
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:text="@string/a5"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/black"
+
+
+                    />
+
+                <Button
+                    android:layout_width="27dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/a4"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@color/str1"
+                    android:layout_marginRight="16dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:onClick="submitOrder"
+                    android:layout_marginTop="4dp"
+
+                    />
+            </RelativeLayout>
+
+
+
+
+
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <Button
+
+                            android:layout_width="184dp"
+                            android:layout_height="276dp"
+                            android:layout_centerHorizontal="true"
+
+                            android:onClick="submitTableResult"
+                            android:background="@null"
+                            android:layout_alignParentLeft="true"
+                            />
+                        <ImageView
+                            android:id="@+id/image6"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/bitmap_5"
+                            />
+
+                        <TextView
+
+
+                            android:text="NEW"
+                            android:layout_width="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="8dp"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/white"
+                            android:background="@drawable/roundcorner5"
+                            />
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="14dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            >
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_like"
+                                android:background="@null"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_like"
+                                />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/text6"
+                            android:layout_below="@id/image6"
+                            android:text="Футболка с коротким рукавом для мальчиков BARKITO"
+                            android:layout_width="158dp"
+                            android:gravity=""
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif"
+                            android:lineSpacingMultiplier="1.14"
+                            android:textColor="@color/black_two"
+                            />
+
+                        <TextView
+                            android:id="@+id/text62"
+                            android:layout_below="@id/text6"
+                            android:text="259 ₽"
+                            android:layout_width="158dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@android:color/black"
+                            />
+
+
+                        <Button
+                            android:layout_width="160dp"
+                            android:layout_height="36dp"
+                            android:text="В КОРЗИНУ"
+                            android:fontFamily="sans-serif-medium"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:layout_marginRight="16dp"
+                            android:layout_below="@id/text62"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/roundcorner"
+
+                            android:textSize="14sp"
+                            android:onClick="submitOrder"
+                            android:layout_marginTop="18dp"
+
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="24dp"
+                        android:orientation="horizontal"
+                        android:background="@color/white"
+                        >
+
+                        <Button
+
+                            android:layout_width="184dp"
+                            android:layout_height="276dp"
+                            android:layout_centerHorizontal="true"
+
+                            android:onClick="submitTableResult"
+                            android:background="@null"
+                            android:layout_alignParentLeft="true"
+                            />
+                        <ImageView
+                            android:id="@+id/image7"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/bitmap_5"
+                            />
+                        <TextView
+                            android:id="@+id/text75"
+
+                            android:text="NEW"
+                            android:layout_width="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="8dp"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/white"
+                            android:background="@drawable/roundcorner5"
+                            />
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="14dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            >
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_like"
+                                android:background="@null"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_like"
+                                />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/text7"
+                            android:layout_below="@id/image7"
+                            android:text="Футболка с коротким рукавом для мальчиков BARKITO"
+                            android:layout_width="158dp"
+                            android:gravity=""
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif"
+                            android:lineSpacingMultiplier="1.14"
+                            android:textColor="@color/black_two"
+                            />
+
+                        <TextView
+                            android:id="@+id/text72"
+                            android:layout_below="@id/text7"
+                            android:text="259 ₽"
+                            android:layout_width="158dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@android:color/black"
+                            />
+
+
+                        <Button
+                            android:layout_width="160dp"
+                            android:layout_height="36dp"
+                            android:text="В КОРЗИНУ"
+                            android:fontFamily="sans-serif-medium"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:layout_marginRight="16dp"
+                            android:layout_below="@id/text72"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/roundcorner"
+
+                            android:textSize="14sp"
+                            android:onClick="submitOrder"
+                            android:layout_marginTop="18dp"
+
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginTop="24dp"
+                android:gravity="center_horizontal"
+                android:background="@color/white"
+
+                >
+                <LinearLayout
+                    android:id="@+id/l2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:gravity="center_horizontal"
+                    android:orientation="vertical"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true">
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="match_parent"
+                        android:src="@drawable/ic_gift"
+                        android:layout_marginTop="24dp"
+                        />
+
+
+
+
+                    <TextView
+
+
+                        android:text="Поможем подобрать подарок
+ребёнку по вкусу!"
+                        android:layout_width="200dp"
+                        android:gravity="center"
+
+                        android:layout_height="40dp"
+
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif"
+                        android:textStyle="normal"
+                        android:layout_marginTop="12dp"
+                        android:letterSpacing="0.01"
+                        android:lineSpacingMultiplier="1.14"
+                        android:textColor="@color/black_two"
+
+                        />
+
+                    <Button
+
+                        android:layout_width="152dp"
+                        android:layout_height="36dp"
+                        android:text="ПОДОБРАТЬ"
+                        android:fontFamily="sans-serif-medium"
+                        android:textStyle="normal"
+                        android:textColor="@color/white"
+                        android:layout_marginTop="16dp"
+                        android:background="@drawable/roundcorner6"
+
+                        android:textSize="14sp"
+                        android:onClick="submitOrder"
+
+
+                        />
+                </LinearLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+
+
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:text="@string/a6"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/black"
+
+
+                    />
+
+                <Button
+                    android:layout_width="27dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/a4"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@color/str1"
+                    android:layout_marginRight="16dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:onClick="submitOrder"
+                    android:layout_marginTop="4dp"
+
+                    />
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <Button
+
+                            android:layout_width="184dp"
+                            android:layout_height="276dp"
+
+                            android:onClick="submitTableResult"
+                            android:background="@null"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                        <ImageView
+                            android:id="@+id/image8"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/bitmap_5"
+                            />
+                        <TextView
+                            android:id="@+id/text8"
+
+                            android:text="-10 %"
+                            android:layout_width="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="8dp"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/white"
+                            android:background="@drawable/roundcorner2"
+                            />
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="14dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            >
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_like"
+                                android:background="@null"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_like"
+                                />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/text9"
+                            android:layout_below="@id/image8"
+                            android:text="Футболка с коротким рукавом для мальчи..."
+                            android:layout_width="158dp"
+                            android:gravity=""
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:lineSpacingMultiplier="1.14"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black_two"
+                            />
+
+                        <TextView
+                            android:id="@+id/text81"
+                            android:layout_below="@id/text9"
+                            android:text="259 ₽"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/vermillion"
+                            />
+                        <TextView
+                            android:id="@+id/text82"
+                            android:layout_below="@id/text9"
+
+                            android:text="400 ₽"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="64dp"
+                            android:layout_height="19dp"
+                            android:layout_marginTop="11dp"
+                            android:textSize="12sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black__54"
+                            android:gravity=""
+                            />
+                        <TextView
+                            android:id="@+id/text83"
+                            android:layout_below="@id/text82"
+
+                            android:text="(выгода 141 ₽)"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="18dp"
+                            android:layout_marginTop="8dp"
+                            android:textSize="12sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black__54"
+                            android:gravity=""
+                            />
+
+                        <Button
+                            android:layout_width="160dp"
+                            android:layout_height="36dp"
+                            android:text="В КОРЗИНУ"
+                            android:fontFamily="sans-serif-medium"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:layout_marginRight="16dp"
+                            android:layout_below="@id/text83"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/roundcorner"
+
+                            android:textSize="14sp"
+                            android:onClick="submitOrder"
+                            android:layout_marginTop="12dp"
+
+                            />
+                    </RelativeLayout>
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="24dp"
+                        android:orientation="horizontal"
+                        android:background="@color/white"
+                        >
+
+                        <Button
+
+                            android:layout_width="184dp"
+                            android:layout_height="276dp"
+                            android:layout_centerHorizontal="true"
+
+                            android:onClick="submitTableResult"
+                            android:background="@null"
+                            android:layout_alignParentLeft="true"
+                            />
+                        <ImageView
+                            android:id="@+id/image11"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/bitmap_5"
+                            />
+                        <TextView
+
+
+                            android:text="2+1"
+                            android:layout_width="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="8dp"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/white"
+                            android:background="@drawable/roundcorner"
+                            />
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="14dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            >
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_like"
+                                android:background="@null"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_like"
+                                />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/text11"
+                            android:layout_below="@id/image11"
+                            android:text="Футболка с коротким рукавом для мальчиков BARKITO"
+                            android:layout_width="158dp"
+                            android:gravity=""
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif"
+                            android:lineSpacingMultiplier="1.14"
+                            android:textColor="@color/black_two"
+                            />
+
+                        <TextView
+                            android:id="@+id/text112"
+                            android:layout_below="@id/text11"
+                            android:text="259 ₽"
+                            android:layout_width="158dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@android:color/black"
+                            />
+
+
+                        <Button
+                            android:layout_width="160dp"
+                            android:layout_height="36dp"
+                            android:text="В КОРЗИНУ"
+                            android:fontFamily="sans-serif-medium"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:layout_marginRight="16dp"
+                            android:layout_below="@id/text112"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/roundcorner"
+
+                            android:textSize="14sp"
+                            android:onClick="submitOrder"
+                            android:layout_marginTop="18dp"
+
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+
+
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="8dp"
+
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:text="@string/a7"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/black"
+
+                    />
+
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/red_card"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                   android:layout_marginLeft="96dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+                <TextView
+                    android:text="Электронный подарочный сертификат"
+                    android:layout_width="250dp"
+                    android:gravity="center_vertical"
+
+                    android:layout_height="48dp"
+
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+
+                    android:letterSpacing="0.01"
+                    android:lineSpacingMultiplier="1.14"
+                    android:textColor="@color/black_two"
+
+                    />
+
+                <Button
+
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@color/white"
+
+                    android:background="@null"
+
+                    android:textSize="14sp"
+                    android:onClick="submitOrder"
+
+
+                    />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_list"
+                        android:layout_marginLeft="224dp"
+                        android:layout_marginTop="12dp"
+
+                        />
+            </RelativeLayout>
+
+</RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_marginTop="1dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/gold_card"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="96dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+                    <TextView
+                        android:text="Подарочная карта гибкого номинала"
+                        android:layout_width="250dp"
+                        android:gravity="center_vertical"
+
+                        android:layout_height="48dp"
+
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif"
+                        android:textStyle="normal"
+
+                        android:letterSpacing="0.01"
+                        android:lineSpacingMultiplier="1.14"
+                        android:textColor="@color/black_two"
+
+                        />
+
+                    <Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:fontFamily="sans-serif-medium"
+                        android:textStyle="normal"
+                        android:textColor="@color/white"
+
+                        android:background="@null"
+
+                        android:textSize="14sp"
+                        android:onClick="submitOrder"
+
+
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_list"
+                        android:layout_marginLeft="224dp"
+                        android:layout_marginTop="12dp"
+
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_marginTop="1dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/blue_card"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="24dp"
+                    />
+
+                <RelativeLayout
+                    android:layout_width="250dp"
+                    android:layout_height="48dp"
+                    android:layout_marginLeft="96dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="20dp"
+                    >
+                    <TextView
+                        android:text="Корпоративные подарочные карты"
+                        android:layout_width="208dp"
+                        android:gravity="center_vertical"
+
+                        android:layout_height="48dp"
+
+                        android:textSize="16sp"
+                        android:fontFamily="sans-serif"
+                        android:textStyle="normal"
+
+                        android:letterSpacing="0.01"
+                        android:lineSpacingMultiplier="1.14"
+                        android:textColor="@color/black_two"
+
+                        />
+
+                    <Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:fontFamily="sans-serif-medium"
+                        android:textStyle="normal"
+                        android:textColor="@color/white"
+
+                        android:background="@null"
+
+                        android:textSize="14sp"
+                        android:onClick="submitOrder"
+
+
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_list"
+                        android:layout_marginLeft="224dp"
+                        android:layout_marginTop="12dp"
+
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+
+
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:text="@string/a8"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/black"
+
+
+                    />
+
+                <Button
+                    android:layout_width="27dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/a4"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@color/str1"
+                    android:layout_marginRight="16dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:onClick="submitOrder"
+                    android:layout_marginTop="4dp"
+
+                    />
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+
+                >
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <Button
+
+                            android:layout_width="302dp"
+                            android:layout_height="224dp"
+
+                            android:onClick="submitTableResult"
+                            android:background="@null"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                        <ImageView
+                            android:id="@+id/i1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/bitmap"
+                            />
+
+                        <ImageView
+                            android:id="@+id/i2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="106dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/bitmap_2"
+                            />
+
+                        <ImageView
+                            android:id="@+id/i3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="204dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/bitmap_3"
+                            />
+
+
+
+
+                        <TextView
+                            android:id="@+id/t1"
+                            android:layout_below="@id/i1"
+                            android:text="Комплект Barkito Водолазка + пижама + носки"
+                            android:layout_width="274dp"
+                            android:gravity=""
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif"
+                            android:lineSpacingMultiplier="1.14"
+                            android:textColor="@color/black_two"
+                            />
+
+                        <TextView
+                            android:id="@+id/t2"
+                            android:layout_below="@id/t1"
+                            android:text="259 ₽"
+                            android:layout_width="158dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@android:color/black"
+                            />
+
+
+                        <Button
+                            android:layout_width="278dp"
+                            android:layout_height="36dp"
+                            android:text="В КОРЗИНУ"
+                            android:fontFamily="sans-serif-medium"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:layout_marginRight="16dp"
+                            android:layout_below="@id/t2"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/roundcorner"
+
+                            android:textSize="14sp"
+                            android:onClick="submitOrder"
+                            android:layout_marginTop="12dp"
+
+                            />
+                    </RelativeLayout>
+
+
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginLeft="24dp"
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <Button
+
+                            android:layout_width="302dp"
+                            android:layout_height="224dp"
+
+                            android:onClick="submitTableResult"
+                            android:background="@null"
+                            android:layout_alignParentTop="true"
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                        <ImageView
+                            android:id="@+id/ii1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/bitmap"
+                            />
+
+                        <ImageView
+                            android:id="@+id/ii2"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="106dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/bitmap_2"
+                            />
+
+                        <ImageView
+                            android:id="@+id/ii3"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="204dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/bitmap_3"
+                            />
+
+
+
+
+                        <TextView
+                            android:id="@+id/tt1"
+                            android:layout_below="@id/ii1"
+                            android:text="Комплект Barkito Водолазка + пижама + носки"
+                            android:layout_width="274dp"
+                            android:gravity=""
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif"
+                            android:lineSpacingMultiplier="1.14"
+                            android:textColor="@color/black_two"
+                            />
+
+                        <TextView
+                            android:id="@+id/tt2"
+                            android:layout_below="@id/tt1"
+                            android:text="259 ₽"
+                            android:layout_width="158dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@android:color/black"
+                            />
+
+
+                        <Button
+                            android:layout_width="278dp"
+                            android:layout_height="36dp"
+                            android:text="В КОРЗИНУ"
+                            android:fontFamily="sans-serif-medium"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:layout_marginRight="16dp"
+                            android:layout_below="@id/tt2"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/roundcorner"
+
+                            android:textSize="14sp"
+                            android:onClick="submitOrder"
+                            android:layout_marginTop="12dp"
+
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="48dp"
+
+                android:layout_marginTop="8dp"
+                android:orientation="horizontal"
+
+                >
+
+                <TextView
+
+
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="4dp"
+
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:text="@string/a9"
+                    android:layout_width="wrap_content"
+                    android:layout_height="match_parent"
+                    android:textSize="14sp"
+                    android:gravity="center"
+                    android:layout_alignParentLeft="true"
+                    android:textColor="@color/black"
+
+
+                    />
+
+                <Button
+                    android:layout_width="27dp"
+                    android:layout_height="match_parent"
+                    android:text="@string/a4"
+                    android:fontFamily="sans-serif-medium"
+                    android:textStyle="normal"
+                    android:textColor="@color/str1"
+                    android:layout_marginRight="16dp"
+                    android:layout_alignParentRight="true"
+                    android:background="@null"
+                    android:textSize="14sp"
+                    android:onClick="submitOrder"
+                    android:layout_marginTop="4dp"
+
+                    />
+            </RelativeLayout>
+
+
+
+
+
+
+            <HorizontalScrollView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginLeft="16dp"
+                    android:gravity="center_horizontal"
+                    android:orientation="horizontal" >
+
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:background="@color/white"
+                        android:orientation="horizontal"
+
+                        >
+
+                        <Button
+
+                            android:layout_width="184dp"
+                            android:layout_height="276dp"
+
+                            android:onClick="submitTableResult"
+                            android:background="@null"
+
+                            android:layout_alignParentLeft="true"
+                            android:layout_alignParentStart="true" />
+                        <ImageView
+                            android:id="@+id/iii1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/bitmap_5"
+                            />
+
+                        <TextView
+
+
+                            android:text="NEW"
+                            android:layout_width="40dp"
+                            android:layout_marginLeft="8dp"
+                            android:layout_height="24dp"
+                            android:layout_marginTop="8dp"
+                            android:textSize="12sp"
+                            android:gravity="center"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/white"
+                            android:background="@drawable/roundcorner5"
+                            />
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="14dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            >
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_like"
+                                android:background="@null"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_like"
+                                />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/ttt1"
+                            android:layout_below="@id/iii1"
+                            android:text="Футболка с коротким рукавом для мальчиков BARKITO"
+                            android:layout_width="158dp"
+                            android:gravity=""
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="60dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:fontFamily="sans-serif"
+                            android:lineSpacingMultiplier="1.14"
+                            android:textColor="@color/black_two"
+                            />
+
+                        <TextView
+                            android:id="@+id/ttt2"
+                            android:layout_below="@id/ttt1"
+                            android:text="259 ₽"
+                            android:layout_width="158dp"
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@android:color/black"
+                            />
+
+
+                        <Button
+                            android:layout_width="160dp"
+                            android:layout_height="36dp"
+                            android:text="В КОРЗИНУ"
+                            android:fontFamily="sans-serif-medium"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:layout_marginRight="16dp"
+                            android:layout_below="@id/ttt2"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/roundcorner"
+
+                            android:textSize="14sp"
+                            android:onClick="submitOrder"
+                            android:layout_marginTop="18dp"
+
+                            />
+                    </RelativeLayout>
+                    <RelativeLayout
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+
+                        android:layout_marginLeft="24dp"
+                        android:orientation="horizontal"
+                        android:background="@color/white"
+                        >
+
+                        <Button
+
+                            android:layout_width="184dp"
+                            android:layout_height="276dp"
+                            android:layout_centerHorizontal="true"
+
+                            android:onClick="submitTableResult"
+                            android:background="@null"
+                            android:layout_alignParentLeft="true"
+                            />
+                        <ImageView
+                            android:id="@+id/w1"
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="32dp"
+                            android:layout_marginTop="16dp"
+                            android:src="@drawable/bitmap_5"
+                            />
+                        <ImageView
+
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="8dp"
+                            android:layout_marginTop="8dp"
+                            android:src="@drawable/ic_discount_card"
+
+                            />
+                        <RelativeLayout
+                            android:layout_width="wrap_content"
+                            android:layout_height="wrap_content"
+                            android:layout_marginLeft="150dp"
+                            android:layout_marginTop="14dp"
+                            android:background="@color/white"
+                            android:orientation="horizontal"
+                            >
+                            <Button
+                                android:layout_width="20dp"
+                                android:layout_height="20dp"
+                                android:layout_centerHorizontal="true"
+                                android:src="@drawable/ic_like"
+                                android:background="@null"
+                                android:layout_alignParentLeft="true"
+                                />
+                            <ImageView
+                                android:layout_width="wrap_content"
+                                android:layout_height="match_parent"
+                                android:src="@drawable/ic_like"
+                                />
+
+                        </RelativeLayout>
+
+                        <TextView
+                            android:id="@+id/e2"
+                            android:layout_below="@id/w1"
+                            android:text="Футболка с коротким рукавом для мальчи..."
+                            android:layout_width="158dp"
+                            android:gravity=""
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="40dp"
+                            android:layout_marginTop="4dp"
+                            android:textSize="14sp"
+                            android:lineSpacingMultiplier="1.14"
+                            android:fontFamily="sans-serif"
+                            android:textColor="@color/black_two"
+                            />
+
+                        <TextView
+                            android:id="@+id/e3"
+                            android:layout_below="@id/e2"
+                            android:text="259 ₽"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="8dp"
+                            android:textSize="16sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/vermillion"
+                            />
+                        <TextView
+                            android:id="@+id/e4"
+                            android:layout_below="@id/e2"
+
+                            android:text="без карты 300 ₽"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="64dp"
+                            android:layout_height="18dp"
+                            android:layout_marginTop="11dp"
+                            android:textSize="12sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black__54"
+                            android:gravity=""
+                            />
+                        <TextView
+                            android:id="@+id/e5"
+                            android:layout_below="@id/e4"
+
+                            android:text="(выгода 141 ₽)"
+                            android:layout_width="wrap_content"
+                            android:layout_marginLeft="12dp"
+                            android:layout_height="18dp"
+                            android:layout_marginTop="8dp"
+                            android:textSize="12sp"
+                            android:fontFamily="sans-serif-medium"
+                            android:textColor="@color/black__54"
+                            android:gravity=""
+                            />
+
+                        <Button
+                            android:layout_width="160dp"
+                            android:layout_height="36dp"
+                            android:text="В КОРЗИНУ"
+                            android:fontFamily="sans-serif-medium"
+                            android:textStyle="normal"
+                            android:textColor="@color/white"
+                            android:layout_marginRight="16dp"
+                            android:layout_below="@id/e5"
+                            android:layout_marginLeft="12dp"
+                            android:background="@drawable/roundcorner"
+
+                            android:textSize="14sp"
+                            android:onClick="submitOrder"
+                            android:layout_marginTop="12dp"
+
+                            />
+                    </RelativeLayout>
+                </LinearLayout>
+            </HorizontalScrollView>
+
+
+
+
+
+
+
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_marginTop="24dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_location"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    />
+
+
+                <TextView
+                    android:text="Адреса магазинов"
+                    android:layout_width="wrap_content"
+
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+
+                    android:letterSpacing="0.01"
+                    android:lineSpacingMultiplier="1.14"
+                    android:textColor="@color/black"
+
+                    />
+
+                    <TextView
+                        android:text="Найдите магазины, которые находятся с рядом с вами!"
+                        android:layout_width="232dp"
+                        android:gravity="center_vertical"
+                        android:layout_marginLeft="72dp"
+                        android:layout_marginTop="42dp"
+                        android:layout_height="40dp"
+
+                        android:textSize="14sp"
+                        android:fontFamily="sans-serif"
+                        android:textStyle="normal"
+
+                        android:letterSpacing="0.01"
+                        android:lineSpacingMultiplier="1.14"
+                        android:textColor="@color/black__38"
+
+                        />
+
+
+                <RelativeLayout
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="320dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="36dp"
+                    >
+                    <Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:background="@null"
+
+                        android:onClick="submitOrder"
+
+
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_list"
+
+
+
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="88dp"
+                android:background="@color/white"
+                android:orientation="horizontal"
+                android:layout_marginTop="1dp"
+                >
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:src="@drawable/ic_call_copy"
+                    android:layout_marginLeft="16dp"
+                    android:layout_marginTop="16dp"
+                    />
+
+
+                <TextView
+                    android:text="Связь с нами"
+                    android:layout_width="wrap_content"
+
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginTop="15dp"
+                    android:layout_height="wrap_content"
+
+                    android:textSize="16sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+
+                    android:letterSpacing="0.01"
+                    android:lineSpacingMultiplier="1.14"
+                    android:textColor="@color/black"
+
+                    />
+
+                <TextView
+                    android:text="Присоединяйтесь к нам в соц. сетях и следите за новостями!"
+                    android:layout_width="232dp"
+                    android:gravity="center_vertical"
+                    android:layout_marginLeft="72dp"
+                    android:layout_marginTop="42dp"
+                    android:layout_height="40dp"
+
+                    android:textSize="14sp"
+                    android:fontFamily="sans-serif"
+                    android:textStyle="normal"
+
+                    android:letterSpacing="0.01"
+                    android:lineSpacingMultiplier="1.14"
+                    android:textColor="@color/black__38"
+
+                    />
+
+
+                <RelativeLayout
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:layout_marginLeft="320dp"
+                    android:background="@color/white"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="36dp"
+                    >
+                    <Button
+
+                        android:layout_width="match_parent"
+                        android:layout_height="match_parent"
+
+                        android:background="@null"
+
+                        android:onClick="submitOrder"
+
+
+                        />
+
+                    <ImageView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:src="@drawable/ic_list"
+
+
+
+                        />
+                </RelativeLayout>
+
+            </RelativeLayout>
+
+
+
+
+
+
+
+
+
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+</RelativeLayout>
